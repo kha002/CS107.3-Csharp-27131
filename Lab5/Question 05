@@ -1,0 +1,24 @@
+public class SayHello
+{
+    private void sayHello()
+    {
+        Console.WriteLine("Hello, world!");
+    }
+}
+
+public class Main
+{
+    static void Main(string[] args)
+    {
+        var sayHello = new SayHello();
+
+        try
+        {
+            sayHello.sayHello();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+    }
+}
