@@ -1,0 +1,30 @@
+using System;
+
+namespace AnimalDog
+{
+    class Animal
+    {
+        public void AnimalMethod()
+        {
+            Console.WriteLine("I am Animal");
+        }
+    }
+
+    class Dog : Animal
+    {
+        public void DogMethod()
+        {
+            Console.WriteLine("I have four legs");
+        }
+    }
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Dog dog = new Dog();
+            dog.AnimalMethod();
+            dog.DogMethod();
+        }
+    }
+}
